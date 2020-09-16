@@ -1,1 +1,140 @@
-
+                                                                                                                                                    /*---Google Fonts--*/
+                                                                                                                                                    
+                                                                                                                                                    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+                                                                                                                                                    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100&display=swap');
+                                                                                                                                                    /*--Variables--*/
+                                                                                                                                                    
+                                                                                                                                                     :root {
+                                                                                                                                                        --header-height: 3em;
+                                                                                                                                                        --font-semi: 600;
+                                                                                                                                                        --font-bold: 700;
+                                                                                                                                                    }
+                                                                                                                                                    /*--Colors--*/
+                                                                                                                                                    /*--Typography---*/
+                                                                                                                                                    
+                                                                                                                                                     :root {
+                                                                                                                                                        --body-font: Lato, Montserrat, sans-serif;
+                                                                                                                                                        --big-font-size: 3rem;
+                                                                                                                                                        --h1-font-size: 1.5rem;
+                                                                                                                                                        --h2-font-size: 1.25rem;
+                                                                                                                                                        --normal-font-size: .938rem;
+                                                                                                                                                        --small-font-size: .75rem;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    @media screen and (min-width: 768px) {
+                                                                                                                                                         :root {
+                                                                                                                                                            --body-font: Lato, Montserrat, sans-serif;
+                                                                                                                                                            --big-font-size: 6rem;
+                                                                                                                                                            --h1-font-size: 2.25rem;
+                                                                                                                                                            --h2-font-size: 1.5rem;
+                                                                                                                                                            --normal-font-size: 1rem;
+                                                                                                                                                            --small-font-size: .813rem;
+                                                                                                                                                        }
+                                                                                                                                                        /*--Margins--*/
+                                                                                                                                                         :root {
+                                                                                                                                                            --mb-1: .5rem;
+                                                                                                                                                            --mb-2: 1rem;
+                                                                                                                                                            --mb-3: 1.5rem;
+                                                                                                                                                            --mb-4: 2rem;
+                                                                                                                                                        }
+                                                                                                                                                        /*---Z Index---*/
+                                                                                                                                                         :root {
+                                                                                                                                                            --z-tooltip: 10;
+                                                                                                                                                            --z-fixed: 100:
+                                                                                                                                                        }
+                                                                                                                                                        /*--Base--*/
+                                                                                                                                                        *,
+                                                                                                                                                         ::before,
+                                                                                                                                                         ::after {
+                                                                                                                                                            box-sizing: border-box;
+                                                                                                                                                        }
+                                                                                                                                                        html {
+                                                                                                                                                            scroll-behavior: smooth;
+                                                                                                                                                        }
+                                                                                                                                                        body {
+                                                                                                                                                            margin: var(--header-height) 0 0 0;
+                                                                                                                                                            font-family: var(--body-font);
+                                                                                                                                                            font-size: var(--normal-font-size);
+                                                                                                                                                            color: var(--dark-color);
+                                                                                                                                                            line-height: 1.6;
+                                                                                                                                                        }
+                                                                                                                                                        h1,
+                                                                                                                                                        h2,
+                                                                                                                                                        p {
+                                                                                                                                                            margin: 0;
+                                                                                                                                                        }
+                                                                                                                                                        ul {
+                                                                                                                                                            margin: 0;
+                                                                                                                                                            padding: 0;
+                                                                                                                                                            list-style: none;
+                                                                                                                                                        }
+                                                                                                                                                        a {
+                                                                                                                                                            text-decoration: none;
+                                                                                                                                                            color: var(--dark-color);
+                                                                                                                                                        }
+                                                                                                                                                        img {
+                                                                                                                                                            max-width: 100%;
+                                                                                                                                                            height: auto;
+                                                                                                                                                        }
+                                                                                                                                                        /*--Class--*/
+                                                                                                                                                        .section {
+                                                                                                                                                            padding: 3rem 0;
+                                                                                                                                                        }
+                                                                                                                                                        .section-title {
+                                                                                                                                                            font-size: var(--h2-font-size);
+                                                                                                                                                            color: var(--dark-color);
+                                                                                                                                                            margin: var(mb-4) 0 var(--mb-1);
+                                                                                                                                                            text-align: center;
+                                                                                                                                                        }
+                                                                                                                                                        .section-all {
+                                                                                                                                                            display: block;
+                                                                                                                                                            font-size: var(--small-font-size);
+                                                                                                                                                            font-weight: var(--font-semi);
+                                                                                                                                                            color: var(--dark-color-light);
+                                                                                                                                                            text-align: center;
+                                                                                                                                                            margin-bottom: var(--mb-2);
+                                                                                                                                                        }
+                                                                                                                                                        /*---Layout---*/
+                                                                                                                                                        .bd-grid {
+                                                                                                                                                            max-width: 1024px;
+                                                                                                                                                            display: grid;
+                                                                                                                                                            grid-template-columns: 100%;
+                                                                                                                                                            grid-column-gap: 2 rem;
+                                                                                                                                                            width: calc(100% - 3rem);
+                                                                                                                                                            margin-left: var(--mb-3);
+                                                                                                                                                            margin-right: var(--mb-3);
+                                                                                                                                                        }
+                                                                                                                                                        #1-header {
+                                                                                                                                                            width: 100%;
+                                                                                                                                                            position: fixed;
+                                                                                                                                                            top: 0;
+                                                                                                                                                            left: 0;
+                                                                                                                                                            z-index: var(--z-fixed);
+                                                                                                                                                            background-color: var(--gray-color);
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                    /*---NAV---*/
+                                                                                                                                                    
+                                                                                                                                                    .nav {
+                                                                                                                                                        height: var(--header-height);
+                                                                                                                                                        display: flex;
+                                                                                                                                                        justify-content: space-between;
+                                                                                                                                                        align-items: center;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    @media screen and (max-width: 768px) {
+                                                                                                                                                        .nav__menu {
+                                                                                                                                                            position: fixed;
+                                                                                                                                                            top: var(--header-height);
+                                                                                                                                                            right: 0;
+                                                                                                                                                            width: 80%;
+                                                                                                                                                            height: 100%;
+                                                                                                                                                            padding: 2rem;
+                                                                                                                                                            background-color: var(--white-color);
+                                                                                                                                                            transition: .5;
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .nav__item {
+                                                                                                                                                        margin-bottom: var(--mb-4);
+                                                                                                                                                    }
